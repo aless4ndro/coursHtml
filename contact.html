@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Formation developpeur web et web mobile">
+        <meta name="roobots" content="index, follow">
+        <meta name="author" content="Aless4ndro">
+        <link rel="stylesheet" href="navBarFooter.css">
+        <link rel="stylesheet" href="contact.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="AfpaLogo.png" type="image/x-icon">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <title>Afpa-Formation</title>
+    </head>
+
+    <body>
+        <!-- NAVBAR -->
+        <div class="topnav" id="myTopnav">
+            <img src="LOGO-AFPA-VERT-PNG1.png" alt="" id="logo">
+            <a href="index.html" class="active">Acceuil</a>
+            <a href="formation.html">La formation</a>
+            <a href="contact.html">Contact</a>
+            <a href="temoiniage.html">Témoiniage</a>
+            <a href="referance.html">Nos Référence</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <!-- AFFICHAGE DU JUMBOTRON -->
+        <div
+            class="jumbotron jumbotron-fluid"
+            style="background: center url('CiffreAfpaCentre.jpg')"></div>
+
+        <form action="/action_page.php" style="border:1px solid #4cafac">
+            <div class="container">
+                <h1>S'enregristrer</h1>
+                <p>Veiller vous enregistre.</p>
+                <hr>
+
+                <label for="nom">
+                    <b>Nom et Prénom</b>
+                </label>
+                <input
+                    type="text"
+                    placeholder="Enter votre nom et prénom"
+                    name="nom"
+                    required="required">
+
+                <label for="email">
+                    <b>Email</b>
+                </label>
+                <input type="text" placeholder="Enter Email" name="email" required="required">
+
+                <label for="tel">
+                    <b>Telephone</b>
+                </label>
+                <input
+                    type="tel"
+                    placeholder="Entrer votre numero"
+                    name="tel"
+                    required="required">
+
+                <div>
+                    <span>
+                        <b>Vous etes</b>
+                    </span><br>
+                    <input type="radio" name="couleur" value="Bleu">
+                    Demandeur d'emploi
+                    <input type="radio" name="couleur" value="Rouge">
+                    Salarie en transiotion Pro
+                    <input type="radio" name="couleur" value="Vert" checked="checked">
+                    Autre
+                </div>
+                <br>
+                <div>
+                    <span>
+                        <b>Vous etes</b>
+                    </span><br>
+                    <input type="radio" name="couleur" value="Bleu">
+                    Formation en presentiel
+                    <input type="radio" name="couleur" value="Rouge">
+                    100% a distance
+                    <input type="radio" name="couleur" value="Vert" checked="checked">
+                    Alternance
+                    <input type="radio" name="couleur" value="Noi" checked="checked">
+                    Pas de preference
+                </div>
+
+                <br>
+                <span>
+                    <b>Vous etes resident de</b>
+                </span>
+                <select name="couleur">
+                    <option value="Bleu">Paris</option>
+                    <option value="Rouge">Rouen</option>
+                    <option value="Vert" selected="selected">Caen</option>
+                </select>
+
+                <br>
+                <br>
+
+                <label for="psw">
+                    <b>Password</b>
+                </label>
+                <input
+                    type="password"
+                    placeholder="Enter Password"
+                    name="psw"
+                    required="required">
+
+                <label>
+                    <input
+                        type="checkbox"
+                        checked="checked"
+                        name="remember"
+                        style="margin-bottom:15px">
+                    Remember me
+                </label>
+
+                <p>En acceptant un compte, vous acceptez nos
+                    <a href="#" style="color:dodgerblue">Conditions d'utilisation et Confidentialité.</a>.</p>
+
+                <button type="submit" class="btn-register">S'enregistrer</button>
+                <button type="reset" class="btn-cancel">Effacer</button>
+
+            </div>
+        </form>
+
+        <div class="footer">
+            <img src="LOGO-AFPA-VERT-PNG1.png" alt="">
+            <span>
+                <a href="https://www.facebook.com/afpa.france">
+                    <i class="fa fa-facebook-official" style="font-size:36px"></i>
+                </a>
+            </span>
+            <span>
+                <a href="https://twitter.com/afpafrance">
+                    <i class="fa fa-twitter-square" style="font-size:36px"></i>
+                </a>
+            </span>
+            <span>
+                <a href="https://www.linkedin.com/company/afpa/">
+                    <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+                </a>
+            </span>
+
+            <p>Tout droit reserver 2023 ©
+            </p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

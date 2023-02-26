@@ -1,0 +1,138 @@
+/* General styles */
+html,
+body {
+  height: 115%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #000000;
+}
+
+h2 {
+  color: rgb(75, 70, 74);
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: rgb(94, 93, 94);
+  font-size: 1em;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  margin: 10px auto;
+  padding: 0 40px;
+  padding-top: 70px;
+  column-count: 2;
+  column-width: 10em;
+  column-rule: 1px solid #4cafac;
+  column-gap: 40px;
+}
+
+img {
+  width: 90px;
+  height: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.topnav {
+
+  background-color: rgb(164, 164, 164);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 655px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 655px) {
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Media queries for tablet screens */
+@media screen and (min-width: 768px) {
+
+  section {
+    width: 60%;
+  }
+}
+
+/* Media queries for laptop screens */
+@media screen and (min-width: 992px) {
+  section {
+    width: 70%;
+  }
+}
+
+/* Media queries for large desktop screens */
+@media screen and (min-width: 1200px) {
+  section {
+    width: 80%;
+  }
+}
