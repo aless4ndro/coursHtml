@@ -65,7 +65,7 @@
 }
 
 /* Path: style.css */
-.footer {
+footer {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -75,7 +75,7 @@
   text-align: center;
 }
 
-.footer a {
+footer a {
   color: white;
   padding-left: 10px;
 
