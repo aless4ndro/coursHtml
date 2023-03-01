@@ -24,7 +24,7 @@ h1 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px;
-  background-color: #a6ddf9;
+  background-color: #dfeff7;
   justify-items: center;
   margin-top: 30px;
 }
