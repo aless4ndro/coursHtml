@@ -66,20 +66,31 @@
 
 /* Path: style.css */
 footer {
-  position: fixed;
   left: 0;
   bottom: 0;
+  height: 100%;
   width: 100%;
+  padding-bottom: 15px;
+  margin-top: 15px;
   background-color: rgb(164, 164, 164);
   color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   text-align: center;
 }
 
-footer a {
-  color: white;
-  padding-left: 10px;
 
+footer i {
+  color: #ddd;
+  width: 15px;
+  padding: 10px;
+  padding-left: 25px;
+}
 
+footer p {
+  font-size: 10px;
 }
 
 #logo {

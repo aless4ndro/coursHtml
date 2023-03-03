@@ -1,7 +1,7 @@
 /* General styles */
 html,
 body {
-  height: 115%;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -31,8 +31,10 @@ p {
 }
 
 section {
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
   width: 100%;
-  height: 100%;
   margin: 10px auto;
   padding: 0 40px;
   padding-top: 70px;
@@ -40,6 +42,11 @@ section {
   column-width: 10em;
   column-rule: 1px solid #4cafac;
   column-gap: 40px;
+}
+
+/*break-inside: avoid; à la règle de votre élément enfant pour empêcher la rupture de colonne à l'intérieur de cet élément. */
+section>div {
+  break-inside: avoid;
 }
 
 img {

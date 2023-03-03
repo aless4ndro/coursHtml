@@ -37,97 +37,95 @@
             style="background: center url('CiffreAfpaCentre.jpg')"></div>
 
         <form action="/action_page.php" style="border:1px solid #4cafac">
-            <div class="container">
-                <h1>S'enregristrer</h1>
-                <p>Veiller vous enregistre.</p>
-                <hr>
+            <h1>S'enregristrer</h1>
+            <p>Veiller vous enregistre.</p>
+            <hr>
 
-                <label for="nom">
-                    <b>Nom et Prénom</b>
-                </label>
-                <input
-                    type="text"
-                    placeholder="Enter votre nom et prénom"
-                    name="nom"
-                    required="required">
+            <label for="nom">
+                <b>Nom et Prénom</b>
+            </label>
+            <input
+                type="text"
+                placeholder="Enter votre nom et prénom"
+                name="nom"
+                required="required">
 
-                <label for="email">
-                    <b>Email</b>
-                </label>
-                <input type="text" placeholder="Enter Email" name="email" required="required">
+            <label for="email">
+                <b>Email</b>
+            </label>
+            <input type="text" placeholder="Enter Email" name="email" required="required">
 
-                <label for="tel">
-                    <b>Telephone</b>
-                </label>
-                <input
-                    type="tel"
-                    placeholder="Entrer votre numero"
-                    name="tel"
-                    required="required">
+            <label for="tel">
+                <b>Telephone</b>
+            </label>
+            <input
+                type="tel"
+                placeholder="Entrer votre numero"
+                name="tel"
+                required="required">
 
-                <div>
-                    <span>
-                        <b>Vous etes</b>
-                    </span><br>
-                    <input type="radio" name="couleur" value="Bleu">
-                    Demandeur d'emploi
-                    <input type="radio" name="couleur" value="Rouge">
-                    Salarie en transiotion Pro
-                    <input type="radio" name="couleur" value="Vert" checked="checked">
-                    Autre
-                </div>
-                <br>
-                <div>
-                    <span>
-                        <b>Vous etes</b>
-                    </span><br>
-                    <input type="radio" name="couleur" value="Bleu">
-                    Formation en presentiel
-                    <input type="radio" name="couleur" value="Rouge">
-                    100% a distance
-                    <input type="radio" name="couleur" value="Vert" checked="checked">
-                    Alternance
-                    <input type="radio" name="couleur" value="Noi" checked="checked">
-                    Pas de preference
-                </div>
-
-                <br>
+            <div>
                 <span>
-                    <b>Vous etes resident de</b>
-                </span>
-                <select name="couleur">
-                    <option value="Bleu">Paris</option>
-                    <option value="Rouge">Rouen</option>
-                    <option value="Vert" selected="selected">Caen</option>
-                </select>
+                    <b>Vous etes</b>
+                </span><br>
+                <input type="radio" name="couleur" value="Bleu">
+                Demandeur d'emploi
+                <input type="radio" name="couleur" value="Rouge">
+                Salarie en transiotion Pro
+                <input type="radio" name="couleur" value="Vert" checked="checked">
+                Autre
+            </div>
+            <br>
+            <div>
+                <span>
+                    <b>Vous etes</b>
+                </span><br>
+                <input type="radio" name="couleur" value="Bleu">
+                Formation en presentiel
+                <input type="radio" name="couleur" value="Rouge">
+                100% a distance
+                <input type="radio" name="couleur" value="Vert" checked="checked">
+                Alternance
+                <input type="radio" name="couleur" value="Noi" checked="checked">
+                Pas de preference
+            </div>
 
-                <br>
-                <br>
+            <br>
+            <span>
+                <b>Vous etes resident de</b>
+            </span>
+            <select name="couleur">
+                <option value="Bleu">Paris</option>
+                <option value="Rouge">Rouen</option>
+                <option value="Vert" selected="selected">Caen</option>
+            </select>
 
-                <label for="psw">
-                    <b>Password</b>
-                </label>
+            <br>
+            <br>
+
+            <label for="psw">
+                <b>Password</b>
+            </label>
+            <input
+                type="password"
+                placeholder="Enter Password"
+                name="psw"
+                required="required">
+
+            <label>
                 <input
-                    type="password"
-                    placeholder="Enter Password"
-                    name="psw"
-                    required="required">
+                    type="checkbox"
+                    checked="checked"
+                    name="remember"
+                    style="margin-bottom:15px">
+                Remember me
+            </label>
 
-                <label>
-                    <input
-                        type="checkbox"
-                        checked="checked"
-                        name="remember"
-                        style="margin-bottom:15px">
-                    Remember me
-                </label>
-
-                <p>En acceptant un compte, vous acceptez nos
-                    <a href="#" style="color:dodgerblue">Conditions d'utilisation et Confidentialité.</a>.</p>
-
+            <p>En acceptant un compte, vous acceptez nos
+                <a href="#" style="color:dodgerblue">Conditions d'utilisation et Confidentialité.</a>.</p>
+            <div class="btn-container">
                 <button type="submit" class="btn-register">S'enregistrer</button>
                 <button type="reset" class="btn-cancel">Effacer</button>
-
             </div>
         </form>
 
